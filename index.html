@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    :root {
+    --white : #ffffff; 
+    --grey : #232323;
+
+    --background: light-dark(var(--white), var(--grey));
+    }
+
+    html {
+    color-scheme: light dark;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    }
+
+    *,*::before,*::after {
+    box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        max-width: 60rem;
+        flex-wrap: wrap;
+        background-color: var(--background);
+        
+    }
+    .boxtype1{
+        margin: .5rem;
+        width: 29rem;
+        height: 29rem;
+    }
+    .boxtype2{
+        margin: .5rem;
+        width: 19rem;
+        height: 19rem;
+    }
+    .boxtype3{
+        margin: .5rem;
+        padding: 2rem;
+        width: 39rem;
+        height: 19rem;
+        background-color: var(--white);
+        color: black;
+
+    }
+    .wrap{
+        text-wrap: wrap;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .logo{
+        width: 4rem;
+        height: 6rem;
+    }
+    .horizontal{
+        display: flex;
+        text-align: center;
+        gap: 2rem;
+    }
+    button{
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-color: black;
+    }
+
+
+    </style>
+</head>
+<body>
+    <section class="boxtype1">
+        <h1>ALESSI</h1>
+        <p class="wrap" contenteditable="true">"
+            L'Art du <i>design</i> dans chaque <b>détails</b>."
+        </p>
+    </section>
+    <section class="boxtype1">
+        <img src="https://lipsum.app/random/500x500" alt="img1">
+    </section>
+    <section class="boxtype2">
+        <img src="https://lipsum.app/random/500x500" alt="img2">
+    </section>
+    <section class="boxtype2">
+        <img src="https://lipsum.app/random/500x500" alt="img3">
+    </section>
+    <section class="boxtype2">
+        <img src="https://lipsum.app/random/500x500" alt="img4">
+    </section>
+    <section class="boxtype3">
+        <h1>Newsletter</h1>
+        <div class="horizontal">
+            <p class="wrap" contenteditable="true">"
+               Abonnez-vous à notre lettre d'information et apportez de l'inspiration.
+            </p>
+            <img class="logo" src="https://lipsum.app/random/500x500" alt="img4">
+        </div>
+        <button>S'inscrire</button>
+    </section>
+    
+</body>
+</html>
