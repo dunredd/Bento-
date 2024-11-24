@@ -4,26 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
     <style>
     
     :root {
-    --white : #ffffff; 
-    --grey : #232323;
+    --white: #ffffff; 
+    --grey: #232323;
+    --blue-d: #797DFF;
+    --blue-l: #375BFF;
 
     --background: light-dark(var(--white), var(--grey));
+    --blueh1: light-dark(var(--blue-d),var(--white));
+    --blue: light-dark(var(--blue-l),var(--blue-d));
     }
 
     html {
     color-scheme: light dark;
-    padding: 0;
     display: flex;
     justify-content: center;
-
     }
 
     *,*::before,*::after {
     box-sizing: border-box;
     }
+
     body{
         display: flex;
         justify-content: center;
@@ -35,14 +58,39 @@
     article{
         display: flex;
         flex-direction: column;
+        max-width: 30rem;
+        min-width: 20rem;
     }
     section, img, .discover{
         border-radius:2rem;
     }
     .boxtype1{
         margin: .5rem;
-        min-width: 29rem;
+        width: 29rem;
         height: 29rem;
+        text-wrap: wrap;
+    }
+    .boxtype1 h1{
+        font-size: 6rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: var(--blueh1);
+    }
+    .boxtype1 p {
+        font-size: 2rem;
+        font-family: DM Serif Display;
+        margin:0rem;
+    }
+    .boxtype1 b{
+        color: var(--blue);
+        font-family: "Beth Ellen", cursive;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .boxtype1 i{
+        color: var(--blue);
     }
     .boxtype2{
         margin: .5rem;
@@ -57,10 +105,22 @@
         height: 19rem;
         background-color: var(--white);
         color: black;
+        font-family: "Lexend Exa", sans-serif;
+    }
+    .text3{
+        text-align: left;
+        font-size: 1rem;
+    }
+    .boxtype3 button {
+        font-family: "Lexend", serif;
+        letter-spacing: .2rem;
+        border-radius: .5rem;
+        border: 0 solid;
+
     }
     .boxtype4{
         margin: .5rem;
-        width: 19rem;
+        width:100%;
         height: 9rem;
         display: flex; 
         justify-content: center; 
@@ -87,7 +147,7 @@
         text-align: center;
         gap: 2rem;
     }
-    button{
+    .boxtype3 button{
         padding-top: .5rem;
         padding-bottom: .5rem;
         padding-left: 2rem;
@@ -98,9 +158,10 @@
         background-color: white;
         color: black;
         margin: .5rem;
-        width: 19rem;
         height: 9rem;
+        width:100%;
     }
+
 
 
     </style>
@@ -109,7 +170,10 @@
     <section class="boxtype1">
         <h1>ALESSI</h1>
         <p class="wrap text1" contenteditable="true">"
-            L'Art du <i>design</i> dans chaque <b>détails</b>."
+            L'Art du <b>design</b>
+        </p>
+        <p class="wrap text2" contenteditable="true">
+            dans chaque <i>détails</i>."
         </p>
     </section>
     <section class="boxtype1">
@@ -125,14 +189,14 @@
         <img src="https://lipsum.app/random/700x700" alt="img4">
     </section>
     <section class="boxtype3">
-        <h1>Newsletter</h1>
+        <h1>NEWSLETTER</h1>
         <div class="horizontal">
-            <p class="wrap text2" contenteditable="true">"
-               Abonnez-vous à notre lettre d'information et apportez de l'inspiration.
+            <p class="wrap text3">"
+               <b>Abonnez-vous</b> à notre lettre d'information et apportez de l'inspiration.
             </p>
             <img class="logo" src="https://lipsum.app/random/400x900" alt="img4">
         </div>
-        <button>S'inscrire</button>
+        <button>S'INSCRIRE</button>
     </section>
     <article>
         <section class="boxtype4">
