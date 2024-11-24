@@ -117,9 +117,6 @@
         }
 
         .container1, .container2{
-        margin: .5rem;
-        width: 29rem;
-        height: 29rem;
         text-wrap: wrap;
         }
         .container1 h1{
@@ -144,29 +141,18 @@
         .container1 i{
             color: var(--blue);
         }
-
-        .container3,.container4,.container5 {
-            margin: .5rem;
-            min-width:19rem;
-            max-width: 29rem;
-            height: 19rem;
-        }
         .container6{
-        margin: .5rem;
         padding: 2rem;
-        max-width: 39rem;
-        height: 19rem;
         background-color: var(--white);
         color: black;
         font-family: "Lexend Exa", sans-serif;
         }
-        .text3{
-            text-align: left;
-            font-size: 1rem;
+        .container6 p{
+            margin-top: 2rem;
         }
         .logo{
-            height: 10rem;
-            width: 5rem;
+            height: 5rem;
+            width: 3rem;
             border-radius: 0%;
         }
         .container6 button {
@@ -179,8 +165,7 @@
             border-radius: .3rem;
         }
         .container7-container2, .container7-container1{
-            margin: .5rem;
-            height: 9rem;
+            height: 100%;
             width:100%;
             display: flex;
             justify-content: center;
@@ -189,39 +174,24 @@
         .container7-container2{
             background-color: white;
             color: black;
+            margin-top: .5rem;
+            font-size: 1.5rem;
+            font-family: DM Serif Display;
         }
         .container7-container1{
-            background-image: url(https://lipsum.app/random/2000x1000); 
+            background-image: url(https://alessi.com/cdn/shop/files/ls_alessi-tales_07_hero-desktop_2000x.jpg?v=1728910051); 
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             color: white;
         }
         .logo{
-            height: 10rem;
-            width: 5rem;
+            height: 8rem;
+            width: 6rem;
             border-radius: 0%;
         }
         
-        .arrow-with-bar {
-            display: flex; /* Alignement horizontal */
-            align-items: center;
-        }
-
-        .bar {
-            width: 50px; /* Longueur de la barre */
-            height: 10px; /* Épaisseur de la barre */
-            background-color: black; /* Couleur de la barre */
-            }
-
-        .head {
-            width: 0;
-            height: 0;
-            border-left: 15px solid black; /* Couleur de la flèche */
-            border-top: 7.5px solid transparent;
-            border-bottom: 7.5px
-        }
-
+    
     </style>
 </head>
 <body>
@@ -236,16 +206,16 @@
         </p>
     </section>
     <section class="container container2">
-        <img src="https://lipsum.app/random/500x500" alt="img1">
+        <img src="https://alessi.com/cdn/shop/files/ALESSI_Gift_Hunter-3_Desktop_860x860px_The-Art-of-Cutlery_2000x.jpg?v=1730358001" alt="img1">
     </section>
     <section class="container container3">
-        <img src="https://lipsum.app/random/500x500" alt="img2">
+        <img src="https://alessi.com/cdn/shop/files/ALESSI_Gift_Hunter-3_Desktop_860x860px_Holiday-Tablescaping_2000x.jpg?v=1730358001" alt="img2">
     </section>
     <section class="container container4">
-        <img src="https://lipsum.app/random/500x500" alt="img3">
+        <img src="https://alessi.com/cdn/shop/files/ALESSI_Gift_Hunter-3_Desktop_860x860px_Coffee-Lovers_2000x.jpg?v=1730358001" alt="img3">
     </section>
     <section class="container container5">
-        <img src="https://lipsum.app/random/500x500" alt="img4">
+        <img src="https://alessi.com/cdn/shop/files/ls_alessi-tales_05_bleed-temp-desktop_2000x.jpg?v=1728906325" alt="img4">
     </section>
     <section class="container container6">
         <h1>NEWSLETTER</h1>
@@ -253,7 +223,7 @@
             <p>
                <b>Abonnez-vous</b> à notre lettre d'information et apportez de l'inspiration.
             </p>
-            <img class="logo" src="https://lipsum.app/random/400x800" alt="img4">
+            <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz9rledKqEO7VtqC1I_0-8qGzl1hkN6H6xkw&s" alt="img4">
         </div>
         <button class="buttunnews">S'INSCRIRE</button>
     </section>
@@ -263,10 +233,7 @@
         </div>
         <button class="container container7-container2">
             Découvrir 
-            <div class="arrow-with-bar-vertical">
-                <div class="head"></div>
-                <div class="bar"></div>
-            </div>
+            <span class="arrow"></span>
         </button>
     </section>
 </article>
